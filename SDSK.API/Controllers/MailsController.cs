@@ -10,7 +10,8 @@ namespace SDSK.API.Controllers
 {
     public class MailsController : ApiController
     {
-        List<Mail> mails = new List<Mail>()
+
+        static public List<Mail> mails = new List<Mail>()
         {
             new Mail()
             {
@@ -61,7 +62,7 @@ namespace SDSK.API.Controllers
         // GET: api/Mails/5
         public Mail Get(int id)
         {
-            return mails.FirstOrDefault(m=>m.Id==id);
+            return mails.FirstOrDefault(m => m.Id == id);
         }
 
         // POST: api/Mails
