@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 using Epam.Sdesk.Model;
 
@@ -54,35 +55,48 @@ namespace SDSK.API.Controllers
             }
         };
         // GET: api/Mails
-        public IEnumerable<Mail> Get()
+        public IHttpActionResult Get()
         {
-            return mails;
+            if (mails == null)
+                return NotFound();
+            var model = mails;
+            return Ok(model);
         }
 
         // GET: api/Mails/5
-        public Mail Get(int id)
+        public IHttpActionResult Get(long id)
         {
-            return mails.FirstOrDefault(m => m.Id == id);
+            var model = mails.FirstOrDefault(m => m.Id == id);
+            if (model == null)
+                return NotFound();
+            return Ok(model);
         }
 
         // POST: api/Mails
-        public void Post([FromBody]Mail value)
+        public IHttpActionResult Post([FromBody]Mail model)
         {
-            mails.Add(value);
+            if (model == null)
+                return BadRequest();
+            mails.Add(model);
+            return CreatedAtRoute("DefaultApi", model.Id, model);
         }
 
         // PUT: api/Mails/5
-        public void Put(int id, [FromBody]Mail value)
+        public IHttpActionResult Put(long id, [FromBody]Mail model)
         {
+            if (model == null)
+                return BadRequest();
             var updatingMail = mails.Find(m => m.Id == id);
             int updatingindex = mails.IndexOf(updatingMail);
-            mails[updatingindex] = value;
+            mails[updatingindex] = model;
+            return CreatedAtRoute("DefaultApi", model.Id, model);
         }
 
         // DELETE: api/Mails/5
-        public void Delete(int id)
+        public IHttpActionResult Delete(long id)
         {
             mails.Remove(mails.FirstOrDefault(m => m.Id == id));
+            return StatusCode(HttpStatusCode.NoContent);
         }
     }
 }
