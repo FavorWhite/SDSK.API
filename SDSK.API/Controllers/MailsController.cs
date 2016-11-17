@@ -54,7 +54,6 @@ namespace SDSK.API.Controllers
                 AttachementId = 3
             }
         };
-        // GET: api/Mails
         public IHttpActionResult Get()
         {
             if (mails == null)
@@ -62,8 +61,6 @@ namespace SDSK.API.Controllers
             var model = mails;
             return Ok(model);
         }
-
-        // GET: api/Mails/5
         public IHttpActionResult Get(long id)
         {
             var model = mails.FirstOrDefault(m => m.Id == id);
@@ -71,31 +68,30 @@ namespace SDSK.API.Controllers
                 return NotFound();
             return Ok(model);
         }
-
-        // POST: api/Mails
         public IHttpActionResult Post([FromBody]Mail model)
         {
-            if (model == null)
+            if (model == null || !ModelState.IsValid)
                 return BadRequest();
             mails.Add(model);
             return CreatedAtRoute("DefaultApi", model.Id, model);
         }
 
-        // PUT: api/Mails/5
         public IHttpActionResult Put(long id, [FromBody]Mail model)
         {
-            if (model == null)
+            if (model == null || !ModelState.IsValid)
                 return BadRequest();
-            var updatingMail = mails.Find(m => m.Id == id);
+            var updatingMail = mails.FirstOrDefault(m => m.Id == id);
+            if (updatingMail == null)
+                return NotFound();
             int updatingindex = mails.IndexOf(updatingMail);
             mails[updatingindex] = model;
-            return CreatedAtRoute("DefaultApi", model.Id, model);
+            return StatusCode(HttpStatusCode.NoContent);
         }
-
-        // DELETE: api/Mails/5
         public IHttpActionResult Delete(long id)
         {
-            mails.Remove(mails.FirstOrDefault(m => m.Id == id));
+            var model = mails.FirstOrDefault(m => m.Id == id);
+            if (model!=null)
+                mails.Remove(model);
             return StatusCode(HttpStatusCode.NoContent);
         }
     }

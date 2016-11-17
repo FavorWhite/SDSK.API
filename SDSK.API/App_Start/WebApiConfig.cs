@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Routing;
 
 namespace SDSK.API
 {
@@ -9,10 +10,17 @@ namespace SDSK.API
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            var constraintResolver = new DefaultInlineConstraintResolver();
+            constraintResolver.ConstraintMap.Add("jiraid", typeof(JiraIdConstraint));
 
-            // Web API routes
-            config.MapHttpAttributeRoutes();
+            config.MapHttpAttributeRoutes(constraintResolver);
+
+
+            config.Routes.MapHttpRoute(
+                 name: "JiraIdConstraintBasedApi",
+                 routeTemplate: "api/jiraitems/{id:jiraid}",
+                 defaults: new { controller = "jiraitems" },
+                 constraints: new { id = new JiraIdConstraint() });
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
