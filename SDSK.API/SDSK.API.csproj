@@ -86,10 +86,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\JiraIdConstraint.cs" />
+    <Compile Include="App_Start\VersionConstraint.cs" />
+    <Compile Include="App_Start\VersionedRoute.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AttachmentsController.cs" />
     <Compile Include="Controllers\JiraitemsController.cs" />
     <Compile Include="Controllers\MailsController.cs" />
+    <Compile Include="Controllers\Mails2Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

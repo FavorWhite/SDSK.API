@@ -1,16 +1,14 @@
-﻿using System;
+﻿using Epam.Sdesk.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Web;
 using System.Web.Http;
-using Epam.Sdesk.Model;
 
 namespace SDSK.API.Controllers
 {
-   
-    public class MailsController : ApiController
+    public class Mails2Controller : ApiController
     {
 
         static public List<Mail> mails = new List<Mail>()
@@ -18,7 +16,7 @@ namespace SDSK.API.Controllers
             new Mail()
             {
                 Id = 1,
-                Body = "1 Email",
+                Body = "111 Email",
                 Subject = "Test 1 Email",
                 Priority = Priority.Medium,
                 To = "test@test.com",
@@ -31,7 +29,7 @@ namespace SDSK.API.Controllers
             new Mail()
             {
                 Id = 2,
-                Body = "2 Email",
+                Body = "222 Email",
                 Subject = "Test 2 Email",
                 Priority = Priority.Medium,
                 To = "test@test.com",
@@ -44,7 +42,7 @@ namespace SDSK.API.Controllers
             new Mail()
             {
                 Id = 3,
-                Body = "3 Email",
+                Body = "333 Email",
                 Subject = "Test 3 Email",
                 Priority = Priority.Medium,
                 To = "test@test.com",
@@ -55,7 +53,7 @@ namespace SDSK.API.Controllers
                 AttachementId = 3
             }
         };
-        //[VersionedRoute("api/mails", 1)]
+        [VersionedRoute("api/mails", 2)]
         public IHttpActionResult Get()
         {
             if (mails == null)
@@ -63,6 +61,7 @@ namespace SDSK.API.Controllers
             var model = mails;
             return Ok(model);
         }
+        [VersionedRoute("api/mails", 2)]
         public IHttpActionResult Get(long id)
         {
             var model = mails.FirstOrDefault(m => m.Id == id);
@@ -92,7 +91,7 @@ namespace SDSK.API.Controllers
         public IHttpActionResult Delete(long id)
         {
             var model = mails.FirstOrDefault(m => m.Id == id);
-            if (model!=null)
+            if (model != null)
                 mails.Remove(model);
             return StatusCode(HttpStatusCode.NoContent);
         }
