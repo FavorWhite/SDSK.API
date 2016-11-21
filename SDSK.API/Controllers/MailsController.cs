@@ -9,7 +9,7 @@ using Epam.Sdesk.Model;
 
 namespace SDSK.API.Controllers
 {
-   
+ 
     public class MailsController : ApiController
     {
 
@@ -55,7 +55,8 @@ namespace SDSK.API.Controllers
                 AttachementId = 3
             }
         };
-        //[VersionedRoute("api/mails", 1)]
+
+        [VersionedRoute("api/mails", 1)]
         public IHttpActionResult Get()
         {
             if (mails == null)
@@ -63,6 +64,8 @@ namespace SDSK.API.Controllers
             var model = mails;
             return Ok(model);
         }
+
+        [VersionedRoute("api/mails/{id}", 1)]
         public IHttpActionResult Get(long id)
         {
             var model = mails.FirstOrDefault(m => m.Id == id);
@@ -70,6 +73,8 @@ namespace SDSK.API.Controllers
                 return NotFound();
             return Ok(model);
         }
+
+        [VersionedRoute("api/mails", 1)]
         public IHttpActionResult Post([FromBody]Mail model)
         {
             if (model == null || !ModelState.IsValid)
@@ -78,6 +83,7 @@ namespace SDSK.API.Controllers
             return CreatedAtRoute("DefaultApi", model.Id, model);
         }
 
+        [VersionedRoute("api/mails/{id}", 1)]
         public IHttpActionResult Put(long id, [FromBody]Mail model)
         {
             if (model == null || !ModelState.IsValid)
@@ -89,6 +95,9 @@ namespace SDSK.API.Controllers
             mails[updatingindex] = model;
             return StatusCode(HttpStatusCode.NoContent);
         }
+
+       // [VersionedRoute("api/mails/{id}", 1)]
+        [VersionedRoute("api/mails/{id}", 1)]
         public IHttpActionResult Delete(long id)
         {
             var model = mails.FirstOrDefault(m => m.Id == id);

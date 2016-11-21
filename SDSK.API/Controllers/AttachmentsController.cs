@@ -8,7 +8,6 @@ using Epam.Sdesk.Model;
 
 namespace SDSK.API.Controllers
 {
-    [RoutePrefix("api/mails/{id}/attachments")]
     public class AttachmentsController : ApiController
     {
         static public List<Attachement> attachs = new List<Attachement>()
@@ -51,8 +50,9 @@ namespace SDSK.API.Controllers
             }
         };
 
-        [Route]
+        // [Route]
         [HttpGet]
+        [VersionedRoute("api/mails/{id}/attachments", 1)]
         public IHttpActionResult Index(long id, string extention = null, int status = 0)
         {
             var model = attachs.Where(x => x.MailId == id);
@@ -63,7 +63,9 @@ namespace SDSK.API.Controllers
             return Ok(model);
         }
 
-        [Route("{attId:int}", Name = "GetAttachmentById")]
+        [Route(Name = "GetAttachmentById")]
+        [HttpGet]
+        [VersionedRoute("api/mails/{id}/attachments/{attId}", 1)]
         public IHttpActionResult Get(long id, int attId)
         {
             var model = attachs.FirstOrDefault(m => m.Id == attId);
@@ -72,8 +74,9 @@ namespace SDSK.API.Controllers
             return Ok(model);
         }
 
-        [Route]
+       
         [HttpPost]
+        [VersionedRoute("api/mails/{id}/attachments", 1)]
         public IHttpActionResult Post(long id, [FromBody]Attachement model)
         {
             if (model == null || !ModelState.IsValid)
@@ -83,7 +86,7 @@ namespace SDSK.API.Controllers
             return CreatedAtRoute("GetAttachmentById", new { attId = model.Id }, model);
         }
 
-        [Route("{attId:int}")]
+        [VersionedRoute("api/mails/{id}/attachments/{attId}", 1)]
         public IHttpActionResult Put(long id, int attId, [FromBody]Attachement model)
         {
             if (model == null || !ModelState.IsValid)
@@ -96,7 +99,7 @@ namespace SDSK.API.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        [Route("{attId:int}")]
+        [VersionedRoute("api/mails/{id}/attachments/{attId}", 1)]
         public IHttpActionResult Delete(long id, int attId)
         {
             var model = attachs.Where(m => m.MailId == id).FirstOrDefault(m => m.Id == attId);

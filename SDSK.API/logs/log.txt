@@ -1,0 +1,490 @@
+2016-11-21 10:36:45,422 [12] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.NotImplementedException: The method or operation is not implemented.
+   at SDSK.API.Controllers.AttachmentsController.Index(Int64 id, String extention, Int32 status) in D:\web Api task\SDSK.API\SDSK.API\Controllers\AttachmentsController.cs:line 58
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 10:52:10,476 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 10:53:16,722 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:13:04,586 [9] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:14:08,798 [9] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:14:09,691 [11] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:14:10,308 [9] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:14:10,872 [11] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:14:11,390 [12] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:14:11,896 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:26:32,631 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:26:33,572 [11] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:26:34,326 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:26:34,919 [11] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:26:35,566 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:26:36,029 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:26:36,470 [12] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:26:37,007 [12] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:26:37,727 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:27:56,594 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:27:57,386 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:27:58,053 [9] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:27:58,615 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:27:59,285 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:28:59,629 [9] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:29:00,761 [12] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:29:39,057 [9] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:29:39,745 [12] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:29:40,320 [12] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:29:40,949 [9] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:29:51,488 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:29:52,220 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:30:05,193 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:30:08,541 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:30:09,364 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:42:16,764 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:42:18,369 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:42:21,332 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:42:22,092 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:42:22,683 [13] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:42:29,699 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:42:36,422 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:42:37,899 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 11:58:36,003 [9] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1/attachments/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:09:26,920 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:16:40,498 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:17:55,916 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:18:04,094 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:20:39,046 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:22:08,544 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:22:12,559 [12] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:22:13,872 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:22:14,544 [13] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:22:15,062 [13] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/api/mails/1: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.MailsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:27:02,850 [9] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:28:43,618 [6] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:31:09,033 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:36:00,368 [10] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-21 12:58:00,964 [7] ERROR DemoProject.Controllers.GlobalExceptionLogger - Unhandled exception thrown in GET for request http://localhost:49881/: System.InvalidOperationException: Multiple controller types were found that match the URL. This can happen if attribute routes on multiple controllers match the requested URL.
+
+The request has found the following matching controller types: 
+SDSK.API.Controllers.Mails2Controller
+SDSK.API.Controllers.AttachmentsController
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.GetDirectRouteController(IHttpRouteData routeData)
+   at System.Web.Http.Dispatcher.DefaultHttpControllerSelector.SelectController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
